@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int x = 0;
+        int y = 0;
+        int operator = 0;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter an operator");
+        operator = sc.nextInt();
+        System.out.println("Input a number");
+        x = sc.nextInt();
+        System.out.println("Second");
+        y = sc.nextInt();
+        if (operator == 1) {
+            add(x, y);
+            System.out.println("The result is: " + add(x, y));
+        } else if (operator == 2) {
+            sub(x, y);
+            System.out.println("The result is: " + sub(x, y));
+        } else if (operator == 3) {
+            sub(x, y);
+            System.out.println("The result is: " + mul(x, y));
+        } else if (operator == 4) {
+            sub(x, y);
+            System.out.println("The result is: " + div(x, y));
+        }
+
+
+    }
+    static int add(int x, int y) {
+        int add = x + y;
+        return add;
+    }
+    static int sub(int x, int y) {
+        int sub = x - y;
+        return sub;
+    }
+    static int mul(int x, int y) {
+        int mul = x * y;
+        return mul;
+    }
+    static int div(int x, int y) {
+        int div = x / y;
+        return div;
+    }
+}
