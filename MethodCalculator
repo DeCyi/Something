@@ -20,10 +20,10 @@ public class Main {
             sub(x, y);
             System.out.println("The result is: " + sub(x, y));
         } else if (operator == 3) {
-            sub(x, y);
+            mul(x, y);
             System.out.println("The result is: " + mul(x, y));
         } else if (operator == 4) {
-            sub(x, y);
+            div(x, y);
             System.out.println("The result is: " + div(x, y));
         }
 
